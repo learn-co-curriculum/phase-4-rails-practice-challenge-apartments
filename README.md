@@ -34,7 +34,7 @@ We're going to build an app for a Gym create the following database structure:
 * The ability to create, read, update and delete **Tenant**
 * Tenant will have name and age
 * The ability to create and delete **Lease**
-* Make sure tenant created without a name.
+* Make sure tenant cannot created without a name.
 * Make sure tenant's age is >= 18 years.
 
 # Instructions:
