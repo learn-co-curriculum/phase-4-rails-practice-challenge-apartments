@@ -40,6 +40,5 @@ We're going to build an app for a Gym create the following database structure:
 # Instructions:
 * Fork this repository
 * Time yourself while working on the deliverables
-* Prioritize associations (being able to select an instructor for a student)
 * Commit when you hit 75 minutes
 * When you have finished all deliverables, commit again.
