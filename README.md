@@ -1,4 +1,4 @@
-# Apartments App
+# Rails Practice Challenge - Apartments App
 
 ## Setup
 
@@ -16,29 +16,47 @@ You can run your Rails API on [`localhost:3000`](http://localhost:3000) by runni
 ```sh
 rails s
 ```
-Check your progress by: Running the Rails server and using Postman make requests
+
+There are no tests for this application, so you'll need to check your progress
+by running the server and using Postman make requests.
 
 ## Introduction
 
-We're going to build an app for a Gym create the following database structure:
+We're going to build an API for an apartment management company. Create the
+following database structure. You will have three models (and their
+corresponding tables), `Apartment`, `Tenant` and `Lease`, with the following
+relationships:
 
-- You will have three models (and their corresponding tables) `Apartment`, `Tenant` and `Lease`
-- A Tenant `has_many` apartments and `has_many` leases
-- An apartment `has_many` tenants and `has_many` leases
-- A lease `belongs_to` an apartment and `belongs_to` a tenant
+- A tenant has many apartments and has many leases
+- An apartment has many tenants and has many leases
+- A lease belongs to an apartment and belongs to a tenant
 
-# Deliverables:
+The models should have the following attributes (along with any attributes
+needed to create the relationships defined above):
 
-* The ability to create, read, update and delete **Apartment**
-* Apartment will have a number
-* The ability to create, read, update and delete **Tenant**
-* Tenant will have name and age
-* The ability to create and delete **Lease**
-* Make sure tenant cannot created without a name.
-* Make sure tenant's age is >= 18 years.
+- Apartment
+  - number
+- Tenant
+  - name (must be present)
+  - age (must be >= 18)
 
-# Instructions:
-* Fork this repository
-* Time yourself while working on the deliverables
-* Commit when you hit 75 minutes
-* When you have finished all deliverables, commit again.
+Make sure to define validations for your models so that no bad data can be saved
+to the database.
+
+## Deliverables
+
+As a user, I can:
+
+- Create, read, update and delete **Apartments**
+- Create, read, update and delete **Tenants**
+- Create and delete **Lease**
+
+Follow good API design practices and use RESTful routing conventions. Make sure
+to handle errors and invalid data by returning the appropriate status code along
+with a message.
+
+## Instructions
+
+- Time yourself while working on the deliverables
+- Commit when you hit 75 minutes
+- When you have finished all deliverables, commit again.
