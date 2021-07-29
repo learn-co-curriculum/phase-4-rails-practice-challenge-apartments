@@ -1,4 +1,4 @@
-# Rails Practice Challenge - Apartments App
+# Rails Practice Challenge - Apartments
 
 ## Setup
 
