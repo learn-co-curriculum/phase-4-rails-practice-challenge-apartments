@@ -39,6 +39,8 @@ needed to create the relationships defined above):
 - Tenant
   - name (must be present)
   - age (must be >= 18)
+- Lease
+  - rent
 
 Make sure to define validations for your models so that no bad data can be saved
 to the database.
