@@ -33,7 +33,6 @@ relationships:
 
 The models should have the following attributes (along with any attributes
 needed to create the relationships defined above):
-
 - Apartment
   - number
 - Tenant
